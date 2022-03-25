@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>¡Pide ahora!</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <span class="text-dark fs-5 fw-bold">Vasselai Arquitectura</span>
+          </a>
+          <button
+            id="menuButton"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="/index.html">INICIO</a>
+              <a class="nav-link" href="/secciones/rendersDestacados.html"
+                >RENDERS DESTACADOS</a
+              >
+              <a class="nav-link" href="/secciones/rendersExternos.html"
+                >RENDERS EXTERNOS</a
+              >
+              <a class="nav-link" href="/secciones/rendersInternos.html"
+                >RENDERS INTERNOS</a
+              >
+              <a class="nav-link" href="/secciones/rendersInternos.html"
+                >PROYECTOS ARQUITECTONICOS</a
+              >
+              <a class="nav-link active" href="#">PIDE TU RENDER</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="titles text-center">Modalidad de trabajo</h1>
+      <div class="container">
+        <p class="fs-5 mt-5">
+          En <span>Vasselai Arquitectura</span> queremos hacer realidad tus
+          ideas. Sin embargo, para poder lograrlo, necesitamos que te contactes
+          con nosotros. Cada render, dependiendo de la cantidad, dimension y
+          caracteristica del mismo tiene un valor diferente, es por eso que no
+          proporcionamos valores en nuestra pagina. A pesar de esto,
+          <span> consultar es gratis!</span> Asi que no dejes de hacerlo,
+          charlemos y visualicemos lo que deseas juntos.
+        </p>
+      </div>
+      <h3 class="container text-center mt-5" id="user" style="display: none">
+        hola
+      </h3>
+      <div class="container align-items-center mt-5">
+        <h1>Contáctanos</h1>
+        <form
+          action="https://formsubmit.co/valensucre93@gmail.com"
+          method="POST"
+          class="contact-form"
+          id="formulario"
+        >
+          <div class="row flex-row">
+            <div class="form-group col-md-6 col-lg-4">
+              <label for="Nombre">Nombre y Apellido</label>
+              <input
+                type="text"
+                name="Nombre"
+                id="Nombre"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-group col-md-6 col-lg-4">
+              <label for="email">Correo Electrónico</label>
+              <input
+                type="email"
+                name="email"
+                id="email-form"
+                class="form-control"
+                required
+              />
+            </div>
+          </div>
+          <div class="row flex-row">
+            <div class="form-group col-md-6 col-lg-4">
+              <label for="phonenumber">Teléfono de Contacto</label>
+              <input
+                type="phonenumber"
+                name="phonenumber"
+                id="phonenumber"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-group col-md-6 col-lg-4">
+              <label for="affair">Asunto</label>
+              <input
+                type="text"
+                name="affair"
+                class="form-control"
+                id="affair"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group col-md-6 col-lg-8">
+            <label for="message">Comentarios</label>
+            <textarea
+              name="message"
+              rows="3"
+              class="form-control"
+              id="comments"
+              required
+            ></textarea>
+          </div>
+          <button
+            id="myButton"
+            type="submit"
+            value="Enviar"
+            class="form-group col-md-6 col-lg-2 mt-4 mb-4 btn-primary"
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer
+      class="w-100 d-flex align-items justify-content-center flex-wrap bg-light text-dark mt-5"
+    >
+      <p class="fs-5 px-3 pt-3">
+        Vasselai Arquitectura. &copy; Todos los derechos reservados 2021
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>

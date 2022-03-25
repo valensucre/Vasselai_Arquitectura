@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+span {
+  color: purple;
+}
+
+.titles {
+  padding: 10px;
+  color: purple;
+}
+
+.carousel-inner {
+  max-height: 80rem;
+}
+
+#myButton {
+  background: purple !important;
+  border: none;
+}
+
+/*Media Queries Pantalla*/
+
+@media (max-width: 768px) {
+  #intro,
+  #about-me {
+    width: 90% !important;
+  }
+  .servicio-fila {
+    width: 100% !important;
+    text-align: center;
+  }
+}
